@@ -105,7 +105,7 @@ Expected result for example:
  - Yes, delivery companies make their profit margins from long-distance deliveries in bulk. Local offices and car fleet are a cost not a profit for them. They would gladly give up on this if people can deliver parcels themselves to their depots. This way they can spend money on trucks, trains and larger depots to increase their long range fleet.
 
 **2. How is theft/fraud prevented without regulation?**
- - There is a reputation system in place. If someone steals your parcel or deceives you in some way you can report it via the abuse/fraud button. On 3 strikes the person is banned from the platform. All users are pseudonymous. This means that their IPs are public and traceable thus you can sort the dispute yourself.
+ - There is a reputation system in place. If someone steals your parcel or deceives you in some way you can report it via the report button. In the case of theft/abuse there is a permanent ban from the platform. In the case of non-presence on two warnings the person is banned from the platform. All users are pseudonymous. This means that their IPs are public and traceable thus you can sort the dispute yourself.
 
 **3. What is the maximum weight of a parcel?** 
 - There are no defined limits. People can deliver by foot, bicycle, e-scooter or their personal car. Thus it all depends on the means of transportation in use and a personal evaluation.
