@@ -1,3 +1,6 @@
-/web/assets/*
+/web/assets/energy/*
+/web/assets/safety/*
+/web/assets/specials/*
+/web/assets/speed/*
 /web/app.wasm
 cyber-derive
