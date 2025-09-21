@@ -75,7 +75,8 @@ a {
 }
 
 .vl.compact {
-  height: 82%!important;
+  height: 75%!important;
+  top: 18.5%;
 }
 
 .vl::before {

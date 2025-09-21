@@ -1,1 +1,3 @@
 /web/assets/*
+/web/app.wasm
+cyber-derive
