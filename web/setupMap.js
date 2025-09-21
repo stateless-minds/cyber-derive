@@ -171,18 +171,13 @@ function setupMap(peerId, action, deliveriesJSON) {
               let plusOneHour = new Date(now.getTime());
               let plusTwoHours = new Date(now.getTime());
 
-              let xMins = new Date();
-
               // Add one hour to current time
               plusOneHour.setHours(plusOneHour.getHours() + 1);
-
-              // Add 5 minutes to current time testing
-              xMins.setMinutes(now.getMinutes() + 5);
 
               // Add two hours to current time
               plusTwoHours.setHours(plusTwoHours.getHours() + 2);
 
-              const entryDateTimeValue = getFormattedDateTime(xMins);
+              const entryDateTimeValue = getFormattedDateTime(plusOneHour);
               const deliveryDateTimeValue = getFormattedDateTime(plusTwoHours);
 
               marker.bindPopup(`<p><center><b>Dropoff
@@ -296,21 +291,11 @@ function validateDateTimes() {
   const now = new Date();
 
   if (enterByDateTime.value && deliverByDateTime.value) {
-    // oneHour = isAtLeastXHoursAfter(now.getTime(), enterDateTime.getTime(), 1);
+    oneHour = isAtLeastXHoursAfter(now.getTime(), enterDateTime.getTime(), 1);
     
-    // if (!oneHour) {
-    //   alert("'Enter By' time must be at least an hour from now.");
-    //   // Optionally reset the invalid input or prevent form submission here
-    //   enterByDateTime.value = "";
-    //   return;
-    // }
-
-
-    // remove after testing and revert to 1 hour by removing xMins and replacing it with oneHour
-    xMins = isAtLeastXMinutesAfter(now.getTime(), enterDateTime.getTime(), 5);
-    if (!xMins) {
-      alert("'Enter By' time must be at least 5 minutes from now.");
-      // Optionally reset the invalid input or prevent form submission here testing
+    if (!oneHour) {
+      alert("'Enter By' time must be at least an hour from now.");
+      // Optionally reset the invalid input or prevent form submission here
       enterByDateTime.value = "";
       return;
     }

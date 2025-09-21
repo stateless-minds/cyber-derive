@@ -70,7 +70,7 @@ The app runs on the public IPFS network. In order to use it follow the steps bel
 ```
   "API": {
     "HTTPHeaders": {
-      "Access-Control-Allow-Origin": ["webui://-", "http://k51qzi5uqu5djbxska9ryliqt6rik7gfy44wb46xub92gbhnsy3c0n5g66phsq.ipns.localhost:8080", "http://127.0.0.1:5001", "https://webui.ipfs.io"],
+      "Access-Control-Allow-Origin": ["webui://-", "http://http://k51qzi5uqu5dgr1liqgrp414mh8ft6an3fpbfx4gbzk14kljw22kvg342t0dq8.ipns.localhost:8080", "http://127.0.0.1:5001", "https://webui.ipfs.io"],
       "Access-Control-Allow-Credentials": ["true"],
       "Access-Control-Allow-Methods": ["PUT", "POST"]
     }
@@ -79,7 +79,7 @@ The app runs on the public IPFS network. In order to use it follow the steps bel
 8. Run the daemon:
 + `.cmd/ipfs/ipfs daemon --enable-pubsub-experiment`
 
-9.  Navigate to <a href="https://ipfs.io/ipns/k51qzi5uqu5djbxska9ryliqt6rik7gfy44wb46xub92gbhnsy3c0n5g66phsq">Cyber Dérive</a>
+9.  Navigate to <a href="https://ipfs.io/ipns/k51qzi5uqu5dgr1liqgrp414mh8ft6an3fpbfx4gbzk14kljw22kvg342t0dq8">Cyber Dérive</a>
 10.  Pin it to your local node so that you cohost it every time your IPFS daemon is running
 ```
 10.1. Open your IPFS dashboard
@@ -88,12 +88,12 @@ http://127.0.0.1:5001/webui
 
 10.1 In your CLI with a running daemon run:
 
-./cmd/ipfs/ipfs ipns name resolve k51qzi5uqu5djbxska9ryliqt6rik7gfy44wb46xub92gbhnsy3c0n5g66phsq
+./cmd/ipfs/ipfs name resolve k51qzi5uqu5dgr1liqgrp414mh8ft6an3fpbfx4gbzk14kljw22kvg342t0dq8
 
 Expected result for example:
-/ipfs/QmRtJemJxaPS1MoCcHJGgQT8Wv7e4L7PTMjxaJU3ZaBDHC
+/ipfs/QmZrgju4wYEXtDtS9ZeKjnVmR9tmzpe9BAhTmXa8BPyEsM
 
-10.2. In the search bar of the web UI search for QmHash by pasting: QmRtJemJxaPS1MoCcHJGgQT8Wv7e4L7PTMjxaJU3ZaBDHC
+10.2. In the search bar of the web UI search for QmHash by pasting: QmZrgju4wYEXtDtS9ZeKjnVmR9tmzpe9BAhTmXa8BPyEsM
 10.3 Click on More
 10.4 Click Set Pinning
 10.5 Mark local node and hit Apply
