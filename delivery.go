@@ -73,16 +73,13 @@ func (d *delivery) OnMount(ctx app.Context) {
 
 	ctx.DelState("page")
 
-	// remove c1 after testing
-	d.myPeerID = myPeer.ID + "c1"
+	d.myPeerID = myPeer.ID
 
 	path := ctx.Page().URL().Path
 
 	id := strings.TrimPrefix(path, "/delivery/")
 
 	d.deliveryID = id
-
-	// enable after testing
 
 	delivery, err := d.deliveryExists()
 

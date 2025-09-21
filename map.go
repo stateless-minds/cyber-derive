@@ -54,8 +54,7 @@ func (m *mapLibre) OnMount(ctx app.Context) {
 		})
 	}
 
-	// remove c1 after testing
-	m.myPeerID = myPeer.ID + "c1"
+	m.myPeerID = myPeer.ID
 
 	ctx.GetState("action", &m.action)
 

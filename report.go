@@ -56,9 +56,7 @@ func (r *report) OnMount(ctx app.Context) {
 
 	ctx.GetState("delivery", &r.delivery)
 
-	// if r.delivery.CreatedBy != myPeer.ID {
-	// remove after testing
-	if r.delivery.CreatedBy != myPeer.ID+"r1" {
+	if r.delivery.CreatedBy != myPeer.ID {
 		ctx.Navigate("/not-found")
 		return
 	}

@@ -305,6 +305,8 @@ function validateDateTimes() {
     //   return;
     // }
 
+
+    // remove after testing and revert to 1 hour by removing xMins and replacing it with oneHour
     xMins = isAtLeastXMinutesAfter(now.getTime(), enterDateTime.getTime(), 5);
     if (!xMins) {
       alert("'Enter By' time must be at least 5 minutes from now.");

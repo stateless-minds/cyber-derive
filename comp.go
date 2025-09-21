@@ -49,13 +49,9 @@ func (c *comp) OnMount(ctx app.Context) {
 
 	ctx.DelState("page")
 
-	// remove c1 after testing
-	c.myPeerID = myPeer.ID + "c1"
+	c.myPeerID = myPeer.ID
 
 	c.subscribeToJoinCompetitionTopic(ctx)
-
-	// remove after testing
-	// c.getAvatars(ctx)
 
 	c.setupDeliveryUpdatedListener(ctx)
 
@@ -321,9 +317,7 @@ func (c *comp) listenForJoins(ctx app.Context) {
 				return // exit the loop and goroutine on EOF or error
 
 			case msg := <-msgChan:
-				// remove after testing
-				c.getAvatar(ctx, msg.From.String()+"c1")
-				// c.getAvatar(ctx, msg.From.String())
+				c.getAvatar(ctx, msg.From.String())
 
 				// Reset the timer because a message arrived
 				if !timeoutTimer.Stop() {

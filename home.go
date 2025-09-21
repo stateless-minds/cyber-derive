@@ -44,8 +44,7 @@ func (h *home) OnMount(ctx app.Context) {
 		return
 	}
 
-	// remove c1 after testing
-	h.myPeerID = myPeer.ID + "c1"
+	h.myPeerID = myPeer.ID
 
 	// err = h.sh.OrbitDocsDelete(dbDelivery, "all")
 	// if err != nil {
