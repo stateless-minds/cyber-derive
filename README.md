@@ -121,3 +121,6 @@ Expected result for example:
 
 **7. What about privacy and personal data?**
 - Cyber Dérive does not collect any personal information. The only identifier is your PeerID which can reveal your IP address in case of misbehavior.
+
+**8. Are there age restrictions?**
+- No, the game is available to all ages but is generally recommended for 10 to 18.
